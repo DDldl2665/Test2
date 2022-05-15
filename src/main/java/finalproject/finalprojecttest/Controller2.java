@@ -31,6 +31,9 @@ public class Controller2 {
         v.setVisible(false);
 
     }
+    public void buttonOnPressed(){
+        FP.currentStage.setScene(FP.F3Scene);
+    }
     public void rb3Click() {
 
         v.setVisible(true);

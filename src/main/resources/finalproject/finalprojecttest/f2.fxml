@@ -29,6 +29,7 @@
             <ImageView fx:id="v" fitHeight="79.0" fitWidth="301.0" onDragDetected="#rb1Click" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="v" fitHeight="81.0" fitWidth="302.0" onDragDetected="#rb2Click" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
             <ImageView fx:id="v" fitHeight="76.0" fitWidth="300.0" onDragDetected="#rb3Click" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#buttonOnPressed" text="Button" GridPane.rowIndex="1" />
          </children>
       </GridPane>
    </top>
