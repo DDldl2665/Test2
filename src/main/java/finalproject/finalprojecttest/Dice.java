@@ -16,6 +16,7 @@ public class Dice {
         this.value =1;
     }
     int value;
+    int testvalue = 0;
     public void changePlayerPosition(int movePlayer, int moveSteps){
         data.setWhoMove(movePlayer);
         data.setMoveSteps(moveSteps);
