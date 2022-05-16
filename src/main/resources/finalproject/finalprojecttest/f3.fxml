@@ -9,7 +9,7 @@
          <children>
             <Label fx:id="label" layoutX="276.0" layoutY="26.0" text="Label" />
             <Button fx:id="checkButton" layoutX="377.0" layoutY="90.0" mnemonicParsing="false" onAction="#checkButtonOnPressed" text="checkbutton" visible="false" />
-            <Button fx:id="getPlayerChooseWhoButton" layoutX="366.0" layoutY="67.0" mnemonicParsing="false" onAction="#getPlayerChooseWhoButtonOnPressed" text="getplayerbutton" />
+            <Button fx:id="getPlayerChooseWhoButton" layoutX="366.0" layoutY="67.0" mnemonicParsing="false" onAction="#getPlayerChooseWhoButtonOnPressed" text="getplayerbutton" visible="false" />
             <RadioButton fx:id="button1" layoutX="159.0" layoutY="71.0" mnemonicParsing="false" text="RadioButton">
                <toggleGroup>
                   <ToggleGroup fx:id="toggleGroup" />
@@ -18,6 +18,6 @@
             <RadioButton fx:id="button2" layoutX="260.0" layoutY="71.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$toggleGroup" />
          </children>
       </Pane>
-      <Button layoutX="386.0" layoutY="164.0" mnemonicParsing="false" onAction="#Click" text="Button" />
+      <Button fx:id="clickButton" layoutX="386.0" layoutY="164.0" mnemonicParsing="false" onAction="#Click" text="Button" />
    </children>
 </AnchorPane>

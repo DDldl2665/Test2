@@ -15,25 +15,48 @@ public class DataHolder {
 
     public int pos;
     public int selectIndex;
-    public int currentPlayer = 1;/**林盈利*/ // 擲骰子的時候告訴我是誰在骰
-    private int whoMove = 0; /**林盈利*/ //等於1 玩家一移動，等於2 玩家二移動
-    private int moveSteps = 0; /**林盈利*/ //當回合移動的玩家移動了幾步
-    public void setWhoMove(int who) { whoMove = who; } /**林盈利*/ // 用來設whoMove
-    public void setMoveSteps(int steps) { moveSteps = steps; }/**林盈利*/ // 用來設moveSteps
-    public int getMoveSteps() { return moveSteps; }/**林盈利*/
-    public int getWhoMove() { return moveSteps; }/**林盈利*/
+    /**
+     * 當前是哪位玩家在擲骰子
+     * 1為玩家一 2為玩家二 以此類推
+     * */
+    public static int currentPlayer = 1;
+    /**
+     * 當前是哪位玩家發生移動 1為玩家一 2為玩家二 以此類推*/
+    private static int whoMove = 0;
+    /**
+     * 公用值static 整數 移動玩家所移動的步數*/
+    private static int moveSteps = 0;
+    /**
+     * 用來設定 whoMove 的方法*/
+    public void setWhoMove(int who) { whoMove = who; }
+    /**
+     * 用來設定 moveSteps 的方法*/
+    public void setMoveSteps(int steps) { moveSteps = steps; }
+    /**
+     * @return moveSteps*/
+    public int getMoveSteps() { return moveSteps; }
+    /**
+     * @return whoMove*/
+    public int getWhoMove() { return whoMove; }
 
-    /**林盈利*/// 用來設moveSteps
 
 
     public Image getImage(ImageView v){
         Image c = v.getImage();
         return c;
     }
-    public DataHolder getDataHolder1(){ /**林盈利*/ // 我用來抓dataHolder
+    /**
+     * getDataHolder1 是用來獲取dataHolder
+     * @author 林盈利
+     * */
+    public DataHolder getDataHolder1(){
         return dataHolder;
     }
-    public DataHolder getDataHolder2(){ /**林盈利*/ // 我用來抓dataHolder
+    /**
+     * getDataHolder2 是用來獲取dataHolder2
+     * @author 林盈利
+     * */
+    public DataHolder getDataHolder2(){
         return dataHolder2;
     }
     public boolean changePos(int value){
